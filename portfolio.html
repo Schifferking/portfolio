@@ -10,46 +10,96 @@
 <body>
   <header>
     <h1>Fernando Susarrey</h1>
-    <h2>About me</h2>
-    <p>I studied computer engineering and learned to program in C and Java. Last year, I started learning web development through the Odin Project and now I know HTML, CSS, Javascript (basic level), Ruby (medium), SQL and Ruby on Rails. </p>
-    <p>During these times I want to keep studying and improving my skills with the languages mentioned before and maybe start learning another one in the future when I feel confident.</p>
+    <div class="header-container">
+      <div class="photo-container">
+        <img alt="Corgi in front of laptop"
+             srcset="images/corgi-dog.jpg 250w,
+                     images/corgi-dog-m.jpg 188w,
+                     images/corgi-dog-s.jpg 125w"
+             sizes="(max-width: 350px) 125px ,(max-width: 800px) 188px, 250px">
+      </div>
+      <div class="header-sub-container">
+        <h2>About me</h2>
+        <p>I studied computer engineering and learned to program in C and Java. Last year, I started learning web development through the Odin Project and now I know HTML, CSS, Javascript (basic level), Ruby (medium), SQL, TDD and Ruby on Rails. </p>
+        <p>During these times I want to keep studying and improving my skills with the languages mentioned before and maybe start learning another one in the future when I feel confident.</p>
+      </div>
+    </div>
   </header>
   <main>
-    <h3>My projects</h3>
-    <div class="projects-container">
-      <div class="project-card">
-        <h4>Facebook clone like</h4>
-        <p>Like the name suggests, it's a Facebook clone app, made with Ruby on Rails and it uses PostgreSQL as the database.</p>
-      </div>
-      <div class="project-card">
-        <h4>Flight booking</h4>
-        <p>This project made in Ruby on Rails works like a page that lets you book a flight. You can search the flight by some parameters, select one and enter the passenger(s) information. When the booking is made, it sents an email to each passenger.</p>
-      </div>
-      <div class="project-card">
-        <h4>Admin dashboard</h4>
-        <p>This is a page made with medium CSS knowledge. It displays a search bar, a sidebar with icons and links, some projects as cards and a section of some trending users.</p>
-      </div>
-      <div class="project-card">
-        <h4>Log-in page</h4>
-        <p>In this page, I use some CSS to display a nice log-in page. It uses images, forms and has some "responsiveness".</p>
-      </div>
-      <div class="project-card">
-        <h4>Chess</h4>
-        <p>This project made in Ruby is like the name says, a clone of the chess game. It works on CLI and works like the original chess game.</p>
-      </div>
-      <div class="project-card">
-        <h4>Mastermind</h4>
-        <p>It's made in Ruby and works in CLI. The player plays against the computer. The player chooses if it wants to create or guess a code. Also, each game can be saved and loaded in a file.</p>
+    <div class="content-container">
+      <h3>My projects</h3>
+      <div class="projects-container">
+        <div class="project-card">
+          <h4>Facebook clone like</h4>
+          <img src="images/facebook-clone.png" alt="Facebook clone screenshot">
+          <a href="https://github.com/Schifferking/odin-facebook">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" />
+          </a>
+          <p>Like the name suggests, it's a Facebook clone app, made with Ruby on Rails and it uses PostgreSQL as the database.</p>
+        </div>
+        <div class="project-card">
+          <h4>Flight booker</h4>
+          <img src="images/flight-booker.png" alt="Flight booker screenshot">
+          <a href="https://github.com/Schifferking/odin-flight-booker">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" />
+          </a>
+          <p>This project made in Ruby on Rails works like a page that lets you book a flight. You can search and select one flight and enter the passenger(s) information. When the booking is made, it sents an email to each passenger.</p>
+        </div>
+        <div class="project-card">
+          <h4>Admin dashboard</h4>
+          <img src="images/admin-dashboard.png" alt="Admin dashboard screenshot">
+          <a href="https://github.com/Schifferking/admin-dashboard">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" alt="github-icon" />
+          </a>
+          <p>This is a page made with medium CSS knowledge. It displays a search bar, a sidebar with icons and links, some projects as cards and a section of some trending users.</p>
+        </div>
+        <div class="project-card">
+          <h4>Sign-up page</h4>
+          <img src="images/sign-up-form.png" alt="Sign-up page screenshot">
+          <a href="https://github.com/Schifferking/html-sign-up-form">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" alt="github-icon" />
+          </a>
+          <p>In this page, I use some CSS to display a nice sign-up page. It uses images, forms and has some responsiveness.</p>
+        </div>
+        <div class="project-card">
+          <h4>Connect four</h4>
+          <img src="images/connect-four.png" alt="Connect four screenshot">
+          <a href="https://github.com/Schifferking/tdd_connect_four">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" alt="github-icon" />
+          </a>
+          <p>This game adaptation made in Ruby with TDD lets two players to play a game. It works like the original game and it detects lines in any direction.</p>
+        </div>
+        <div class="project-card">
+          <h4>Mastermind</h4>
+          <img src="images/mastermind.png" alt="Mastermind screenshot">
+          <a href="https://github.com/Schifferking/ruby-mastermind">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" alt="github-icon" />
+          </a>
+          <p>It's made in Ruby and works in CLI. The player plays against the computer. The player chooses if it wants to create or guess a code. Also, each game can be saved and loaded in a file.</p>
+        </div>
       </div>
     </div>
   </main>
   <footer>
     <h5>Contact</h5>
-    <address>
-      Email: fsusarreym@gmail.com <br>
-      <a href="https://github.com/Schifferking" target="_blank
-      " rel="noopener noreferrer">Github (opens in a new tab)</a>
-    </address>
+    <div class="footer-container">
+      <div class="photo-container">
+        <img alt="Husky in front of laptop"
+             srcset="images/husky-dog.jpg 250w,
+                     images/husky-dog-m.jpg 188w,
+                     images/husky-dog-s.jpg 125w"
+             sizes="(max-width: 350px) 125px ,(max-width: 800px) 188px, 250px">
+      </div>
+      <address>
+        <p>Email: fsusarreym@gmail.com</p>
+        <a href="https://github.com/Schifferking"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-icon" alt="github-icon" />
+          (opens in new tab)
+        </a>
+      </address>
+    </div>
   </footer>
 </body>
 </html>
