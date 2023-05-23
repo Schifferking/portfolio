@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: Sarabun;
+  src: url(fonts/Sarabun-Regular.ttf);
+}
+
+body {
+  margin: 2rem;
+  font-family: Sarabun, sans-serif;
+  background-color: #9b9d9c;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Ubuntu-Bold, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.photo-container {
+  align-self: center;
+}
+
+.header-sub-container {
+  margin: 2rem;
+  padding: 1.5rem;
+  align-self: flex-end;
+  flex: 0.5;
+}
+
+.content-container {
+  margin: 2rem;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px 50px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.project-card > a,
+h4,
+h5,
+address {
+  text-align: center;
+}
+
+.github-icon{
+  width: 45px;
+  height: 45px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    display: block;
+  }
+
+  .header-sub-container {
+    margin: 0;
+    flex: 0;
+  }
+
+  .content-container {
+    margin: 1rem;
+  }
+
+  .photo-container {
+    text-align: center;
+  }
+
+  .footer-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 350px) {
+  body, .content-container {
+    margin: 1rem;
+  }
+}
