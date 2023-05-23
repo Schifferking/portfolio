@@ -28,11 +28,16 @@ h1, h2, h3, h4, h5 {
   align-self: center;
 }
 
+.header-container > .photo-container {
+  animation: 2s show-img 1;
+}
+
 .header-sub-container {
   margin: 2rem;
   padding: 1.5rem;
   align-self: flex-end;
   flex: 0.5;
+  animation: slide-in 1.5s both;
 }
 
 .content-container {
@@ -57,6 +62,12 @@ h3 {
   padding: 1rem;
   border: 2px solid #000;
   border-radius: 5px;
+
+  transition: transform 100ms 100ms ease-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
 }
 
 .project-card > a,
@@ -81,6 +92,20 @@ h5 {
   flex-direction: column;
   justify-content: flex-start;
   gap: 50px;
+}
+
+@media (min-width: 550px) and (max-width: 950px) {
+  h3, h5 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p, a {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -109,5 +134,25 @@ h5 {
 @media (max-width: 350px) {
   body, .content-container {
     margin: 1rem;
+  }
+}
+
+@keyframes show-img {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1000px);
+  }
+  
+  to {
+    transform: translateY(0);
   }
 }
